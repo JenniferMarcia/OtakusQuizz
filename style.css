@@ -1,0 +1,128 @@
+@font-face {
+    font-family: baka;
+    src: url("fonts/CAMBRIAZ.TTF");
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('img/qsd.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: baka;
+    font-weight: lighter;
+background-color: #8f8d8d89;
+    letter-spacing: 2px;
+    text-align: center;
+padding-bottom: 18px;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.container-global {
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.question-block {
+    padding: 10px 15px 15px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(250, 252, 255, 0.767);
+}
+
+.question-block h4 {
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.question-block div {
+    padding-left: 20px;
+}
+
+.question-block label {
+    font-size: 20px;
+}
+
+.question-block input[type='radio'] {
+    transform: scale(1.5);
+    margin: 15px;
+}
+
+form button {
+    border: none;
+    outline: none;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+    display: block;
+    margin: 25px auto;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: rgba(185, 182, 182, 0.717);
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: rgba(216, 228, 228, 0.872);
+}
+
+.resultats {
+    padding: 25px;
+    margin: 10px 0 70px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(252, 243, 243, 0.73);
+}
+
+.resultats h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.aide {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.note {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.echec {
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+
+    33% {
+        transform: translateX(5px);
+    }
+
+    66% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
