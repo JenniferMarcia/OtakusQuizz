@@ -1,6 +1,6 @@
 const form = document.querySelector(".form-quizz");
 let tableauResultats = [];
-const reponses = ["c", "a", "b", "c", "c", "a", "b", "b", "a"];
+const reponses = ["c", "a", "b", "c", "c", "a", "b", "c", "a"];
 const titreResulat = document.querySelector(".resultats h2");
 const texteResulat = document.querySelector(".note");
 const aideResulat = document.querySelector(".aide");
